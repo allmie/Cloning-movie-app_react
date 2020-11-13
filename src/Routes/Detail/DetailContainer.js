@@ -36,10 +36,10 @@ export default class extends React.Component {
       } else {
         ({ data: result } = await tvApi.detail(id));
       }
-      console.log("data", result);
-      // this.setState({
-      //   result,
-      // });
+      // console.log("data", result);
+      this.setState({
+        result,
+      });
     } catch {
       this.setState({
         error: "Can`t find results.",
@@ -54,7 +54,7 @@ export default class extends React.Component {
 
   render() {
     const { result, error, loading } = this.state;
-    console.log(this.state);
+    // console.log(this.state);
     return <DetailPresenter result={result} error={error} loading={loading} />;
   }
 }

@@ -18,10 +18,10 @@ export default class extends React.Component {
       } = await tvApi.topRated();
       const {
         data: { results: popular },
-      } = await tvApi.topRated();
+      } = await tvApi.popular();
       const {
         data: { results: airingToday },
-      } = await tvApi.topRated();
+      } = await tvApi.airingToday();
 
       this.setState({
         topRated,
@@ -41,7 +41,6 @@ export default class extends React.Component {
 
   render() {
     const { topRated, popular, airingToday, loading, error } = this.state;
-
     return (
       <TVPresenter
         topRated={topRated}

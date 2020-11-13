@@ -32,7 +32,6 @@ export default class extends React.Component {
       this.setState({
         error: "Can`t find movies information.",
       });
-      console.log(error);
     } finally {
       this.setState({
         loading: false,
@@ -42,7 +41,6 @@ export default class extends React.Component {
 
   render() {
     const { nowPlaying, upcoming, popular, error, loading } = this.state;
-    console.log(this.state);
     return (
       <HomePresenter
         nowPlaying={nowPlaying}
