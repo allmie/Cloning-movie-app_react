@@ -65,7 +65,7 @@ const SearchPresenter = ({
                 imgUrl={tv.poster_path}
                 title={tv.original_name}
                 rating={tv.vote_average}
-                year={tv.first_air_date.split("-", 1)}
+                year={tv.first_air_date && tv.first_air_date.split("-", 1)}
               />
             ))}
           </Section>
