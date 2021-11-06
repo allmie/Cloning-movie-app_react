@@ -31,3 +31,6 @@ Learning React and ES6 by building a Movie Discovery APP.
 > 위와 같은 에러가 나타남
 > 1. Build command를 ``CI= npm run build`` 변경
 > 2. BrowserRouter -> HashRouter로 변경
+
+
+## Before Typescript using
